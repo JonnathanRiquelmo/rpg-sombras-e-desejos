@@ -11,21 +11,26 @@
         <div class="banner-container">
             <img src="assets/banner.svg" alt="Sombras e Desejos - Banner" class="banner-imagem">
         </div>
-        <h1>Pasión de las Pasiones RPG</h1>
+        <h1>Pasión de Las Pasiones RPG</h1>
     </header>
 
     <main>
         <nav class="navegacao">
             <button class="nav-btn ativo" data-secao="episodios">Episódios</button>
             <button class="nav-btn" data-secao="elenco">Elenco</button>
+            <button class="nav-btn" data-secao="contexto">Contexto</button>
         </nav>
 
         <div id="episodios" class="episodios-container secao-conteudo ativo">
             <!-- Episódios serão carregados dinamicamente aqui -->
         </div>
-
+        
         <div id="elenco" class="elenco-container secao-conteudo">
             <!-- Personagens serão carregados dinamicamente aqui -->
+        </div>
+
+        <div id="contexto" class="contexto-container secao-conteudo">
+            <!-- Contexto será carregado dinamicamente aqui -->
         </div>
 
         <!-- Modal para detalhes do personagem -->
@@ -35,10 +40,18 @@
                 <div id="modalConteudo"></div>
             </div>
         </div>
+
+        <!-- Modal para imagens dos episódios -->
+        <div id="imagemModal" class="modal">
+            <div class="modal-conteudo modal-imagem">
+                <span class="fechar-modal">&times;</span>
+                <img id="imagemModalConteudo" src="" alt="Imagem do episódio">
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>Feito com amor para nossa novela de RPG</p>
+        <p>Feito com ❤️ para nossa novela de RPG!</p>
     </footer>
 
     <script src="script.js"></script>

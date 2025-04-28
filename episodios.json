@@ -1,7 +1,7 @@
 {
   "episodios": [
     {
-      "titulo": "EP01",
+      "titulo": "Título EP01",
       "data": "2024-04-20",
       "resumo": "Descrição do EP01.",
       "imagens": [
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "titulo": "EP02",
+      "titulo": "Título EP02",
       "data": "2024-04-06",
       "resumo": "Descrição do EP02.",
       "imagens": [
