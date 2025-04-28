@@ -12,8 +12,25 @@
     </header>
 
     <main>
-        <div id="episodios" class="episodios-container">
+        <nav class="navegacao">
+            <button class="nav-btn ativo" data-secao="episodios">Episódios</button>
+            <button class="nav-btn" data-secao="elenco">Elenco</button>
+        </nav>
+
+        <div id="episodios" class="episodios-container secao-conteudo ativo">
             <!-- Episódios serão carregados dinamicamente aqui -->
+        </div>
+
+        <div id="elenco" class="elenco-container secao-conteudo">
+            <!-- Personagens serão carregados dinamicamente aqui -->
+        </div>
+
+        <!-- Modal para detalhes do personagem -->
+        <div id="personagemModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar-modal">&times;</span>
+                <div id="modalConteudo"></div>
+            </div>
         </div>
     </main>
 

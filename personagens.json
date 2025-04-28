@@ -1,0 +1,25 @@
+{
+  "personagens": [
+    {
+      "nome": "Martín Moreno",
+      "tipo": "jogador",
+      "papel": "O herdeiro do Visconde Freeshop, lutando para salvar sua família.",
+      "imagem": "assets/martin.jpg",
+      "descricaoCompleta": "Martín é intenso, leal e com um passado perigoso. Atua como El Caballero na campanha. Luta contra a doença do pai e tenta proteger Beatriz, sua irmã mais nova, dos perigos que rondam a família Moreno. Seu charme latino e olhar penetrante escondem cicatrizes profundas de um passado que ele prefere manter nas sombras."
+    },
+    {
+      "nome": "María Dolores",
+      "tipo": "npc",
+      "papel": "A misteriosa dama da noite, guardiã de segredos ancestrais.",
+      "imagem": "assets/maria-dolores.jpg",
+      "descricaoCompleta": "María Dolores é uma figura enigmática que surge nas noites de lua cheia. Seus olhos negros como a noite guardam segredos de gerações. Proprietária do Café La Luna, ela serve mais do que apenas café - serve destinos. Sua presença é tanto um presságio quanto uma bênção para aqueles que cruzam seu caminho."
+    },
+    {
+      "nome": "Don Ricardo",
+      "tipo": "npc",
+      "papel": "O poderoso patriarca com um império construído em segredos.",
+      "imagem": "assets/don-ricardo.jpg",
+      "descricaoCompleta": "Don Ricardo é o Visconde do Freeshop, um homem que construiu seu império nas fronteiras entre o legal e o ilegal. Agora, enfermo e consciente de sua mortalidade, busca garantir seu legado. Sua doença misteriosa pode ser mais do que apenas física - talvez seja o preço de antigas promessas feitas nas sombras."
+    }
+  ]
+}
