@@ -183,6 +183,9 @@ document.querySelectorAll('.nav-btn').forEach(botao => {
         secaoAtual.classList.add('ativo');
         secaoAtual.style.display = 'block';
 
+        // Manter a posição atual da página
+        const posicaoAtual = window.scrollY;
+        
         // Carregar conteúdo específico da seção
         switch(secaoId) {
             case 'episodios':
@@ -195,6 +198,11 @@ document.querySelectorAll('.nav-btn').forEach(botao => {
                 carregarContexto();
                 break;
         }
+        
+        // Restaurar a posição da página após o carregamento do conteúdo
+        setTimeout(() => {
+            window.scrollTo(0, posicaoAtual);
+        }, 10);
     });
 });
 
@@ -245,6 +253,9 @@ document.addEventListener('DOMContentLoaded', () => {
     secaoInicial.classList.add('ativo');
     secaoInicial.style.display = 'block';
 
+    // Salvar a posição atual da página
+    const posicaoInicial = window.scrollY;
+    
     // Carregar apenas o conteúdo da seção ativa
     switch(secaoId) {
         case 'episodios':
@@ -257,4 +268,9 @@ document.addEventListener('DOMContentLoaded', () => {
             carregarContexto();
             break;
     }
+    
+    // Restaurar a posição da página após o carregamento do conteúdo
+    setTimeout(() => {
+        window.scrollTo(0, posicaoInicial);
+    }, 10);
 });
