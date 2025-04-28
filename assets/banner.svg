@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="overlay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#000;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Fundo dramático -->
+  <rect width="1200" height="400" fill="#1a1a1a"/>
+  
+  <!-- Elementos decorativos -->
+  <path d="M0,200 Q600,100 1200,200" stroke="#d4af37" fill="none" opacity="0.3" stroke-width="2"/>
+  <path d="M0,250 Q600,150 1200,250" stroke="#d4af37" fill="none" opacity="0.2" stroke-width="1"/>
+  
+  <!-- Título -->
+  <text x="600" y="200" font-family="Georgia, serif" font-size="48" fill="#d4af37" text-anchor="middle">Sombras e Desejos</text>
+  <text x="600" y="250" font-family="Georgia, serif" font-size="24" fill="#fff" text-anchor="middle" opacity="0.8">Uma história de paixão, mistério e destino</text>
+  
+  <!-- Overlay para efeito dramático -->
+  <rect width="1200" height="400" fill="url(#overlay)"/>
+</svg>

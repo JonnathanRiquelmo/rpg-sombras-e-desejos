@@ -1,25 +1,39 @@
 {
-  "personagens": [
-    {
-      "nome": "Martín Moreno",
-      "tipo": "jogador",
-      "papel": "O herdeiro do Visconde Freeshop, lutando para salvar sua família.",
-      "imagem": "assets/martin.jpg",
-      "descricaoCompleta": "Martín é intenso, leal e com um passado perigoso. Atua como El Caballero na campanha. Luta contra a doença do pai e tenta proteger Beatriz, sua irmã mais nova, dos perigos que rondam a família Moreno. Seu charme latino e olhar penetrante escondem cicatrizes profundas de um passado que ele prefere manter nas sombras."
-    },
-    {
-      "nome": "María Dolores",
-      "tipo": "npc",
-      "papel": "A misteriosa dama da noite, guardiã de segredos ancestrais.",
-      "imagem": "assets/maria-dolores.jpg",
-      "descricaoCompleta": "María Dolores é uma figura enigmática que surge nas noites de lua cheia. Seus olhos negros como a noite guardam segredos de gerações. Proprietária do Café La Luna, ela serve mais do que apenas café - serve destinos. Sua presença é tanto um presságio quanto uma bênção para aqueles que cruzam seu caminho."
-    },
-    {
-      "nome": "Don Ricardo",
-      "tipo": "npc",
-      "papel": "O poderoso patriarca com um império construído em segredos.",
-      "imagem": "assets/don-ricardo.jpg",
-      "descricaoCompleta": "Don Ricardo é o Visconde do Freeshop, um homem que construiu seu império nas fronteiras entre o legal e o ilegal. Agora, enfermo e consciente de sua mortalidade, busca garantir seu legado. Sua doença misteriosa pode ser mais do que apenas física - talvez seja o preço de antigas promessas feitas nas sombras."
-    }
-  ]
+    "personagens": [
+        {
+            "nome": "Rubi Albatroz",
+            "tipo": "jogador",
+            "papel": "A bela e ambiciosa herdeira falida que fará de tudo para reconquistar o poder e o prestígio de sua família.",
+            "imagem": "assets/rubi-albatroz.jpeg",
+            "descricaoCompleta": "Filha da arruinada família Albatroz, Rubi venceu o concurso de Miss Santana do Salvamento, convencida de que a cidade — e a glória — sempre lhe pertenceram. Vaidosa, venenosa e implacável, vê sua beleza como a chave para restaurar seu status perdido. Rubi despreza os rivais, especialmente sua irmã Cristal, e guarda uma relação tóxica e debochada com Pablo Rubio, ao mesmo tempo em que lida com a obsessão perigosa de Don Barreta. Determinada, ela acredita que nasceu para brilhar — e está disposta a pisar em quem for preciso para isso."
+        },
+        {
+            "nome": "Martín Moreno",
+            "tipo": "jogador",
+            "papel": "O herdeiro honrado e determinado que luta contra o passado sombrio da família e os desafios do presente.",
+            "imagem": "assets/martin-moreno.jpeg",
+            "descricaoCompleta": "Único filho do dono do Visconde Freeshop, Martín carrega nas costas o peso da tradição e da falência iminente. Leal, direto e protetor, ele representa o arquétipo do \"El Caballero\": alguém que enfrenta os problemas de frente e com emoção à flor da pele. Enquanto tenta salvar o legado da família, Martín se vê envolvido em relações perigosas, conspirações políticas e uma paixão intensa por Beatriz, a mulher que promete reacender sua esperança. Sua busca por justiça, no entanto, pode levá-lo a confrontar verdades devastadoras sobre sua origem."
+        },
+        {
+            "nome": "Pablo Rubio",
+            "tipo": "jogador",
+            "papel": "O rebelde oculto, criado na pobreza, que busca arrancar do destino a riqueza que acredita ser sua por direito.",
+            "imagem": "assets/pablo-rubio.jpeg",
+            "descricaoCompleta": "Criado por uma mulher humilde sem saber a verdade sobre suas origens, Pablo cresceu com raiva no coração e um desejo ardente de subir na vida a qualquer custo. Sarcástico, impulsivo e inquieto, ele descobre ter uma ligação de sangue com Martín Moreno, seu rival desconhecido. Usando sua aparência semelhante e sua inteligência de rua, Pablo se infiltra nas festas da elite para colher informações e tentar reivindicar o que acredita ser seu. Sua relação tóxica e carregada de paixão com Rubi Albatroz só alimenta ainda mais sua sede de poder e vingança."
+        },
+        {
+            "nome": "Don Barreta",
+            "tipo": "jogador",
+            "papel": "O magnata paranoico e fervoroso que construiu um império farmacêutico e agora luta contra seus próprios fantasmas.",
+            "imagem": "assets/don-barreta.jpeg",
+            "descricaoCompleta": "De origem humilde, Amado \"Don\" Barreta ascendeu ao topo com trabalho duro, ambição desmedida e uma paixão exagerada pela vida — e pelos negócios. Proprietário da rede de Farmácias Barreta, é uma figura imponente na política e no comércio local. Obcecado por Rubi Albatroz, que vê como um troféu inalcançável, e atormentado pela frustração com seus próprios filhos, Don Barreta é um furacão de sentimentos contraditórios: amor, inveja, ciúme e medo da decadência. Sua paranoia crescente o leva a desconfiar até de seus aliados mais fiéis."
+        },
+        {
+            "nome": "Beatriz",
+            "tipo": "npc",
+            "papel": "A jovem doce e resiliente, que carrega segredos do passado e se torna a luz e a fraqueza do coração de Martín.",
+            "imagem": "assets/beatriz.jpeg",
+            "descricaoCompleta": "Empregada de confiança da família Barreta, Beatriz é muito mais do que aparenta. Por trás de sua aparência serena e modos discretos, existe uma mulher forte, moldada pelas dificuldades e pelos segredos que guarda. Sua ternura e honestidade cativaram Martín Moreno, despertando nele uma paixão protetora e desesperada. No entanto, sua ligação com figuras poderosas e sombrias da cidade a coloca constantemente em perigo. Beatriz é o símbolo de esperança em meio à corrupção e à decadência que assolam Santa Ana do Salvamento."
+        }
+    ]
 }
