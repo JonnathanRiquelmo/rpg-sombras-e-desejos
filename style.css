@@ -1,0 +1,120 @@
+/* Variáveis de cores */
+:root {
+    --cor-primaria: #8B0000;
+    --cor-dourada: #DAA520;
+    --cor-preta: #1A1A1A;
+    --cor-texto: #333;
+    --cor-fundo: #FFF8F8;
+}
+
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    padding: 1.5rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px var(--cor-preta);
+}
+
+/* Container principal */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Estilos dos episódios */
+.episodios-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.episodio {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--cor-dourada);
+}
+
+.episodio h2 {
+    color: var(--cor-primaria);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.episodio .data {
+    color: var(--cor-dourada);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.episodio .resumo {
+    margin-bottom: 1.5rem;
+}
+
+/* Galeria de imagens */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-preta);
+    color: var(--cor-dourada);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .episodio {
+        padding: 1.5rem;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
