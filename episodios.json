@@ -1,8 +1,8 @@
 {
   "episodios": [
     {
-      "titulo": "Nome EP01",
-      "data": "2024-01-15",
+      "titulo": "EP01",
+      "data": "2024-04-20",
       "resumo": "Descrição do EP01.",
       "imagens": [
         "assets/1.jpeg",
@@ -24,8 +24,8 @@
       ]
     },
     {
-      "titulo": "Desejos Ocultos",
-      "data": "2024-01-22",
+      "titulo": "EP02",
+      "data": "2024-04-06",
       "resumo": "Descrição do EP02.",
       "imagens": [
         "assets/17.jpeg",
