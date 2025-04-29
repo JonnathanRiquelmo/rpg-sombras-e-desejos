@@ -310,60 +310,151 @@ main {
 
 .modal-conteudo {
     position: relative;
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
     margin: 5% auto;
-    padding: 2rem;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 8px;
+    padding: 2.5rem;
+    width: 95%;
+    max-width: 900px;
+    border-radius: 16px;
     max-height: 90vh;
     overflow-y: auto;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: modalEntrada 0.3s ease forwards;
+    z-index: 1005; /* Adicionando z-index menor que o botão de fechar */
+}
+
+@keyframes modalEntrada {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .fechar-modal {
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: 1.5rem;
+    top: 1.5rem;
     font-size: 2rem;
     color: var(--cor-primaria);
     cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1010; /* Adicionando z-index maior que o modal */
+}
+
+.modal-conteudo {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 5% auto;
+    padding: 2.5rem;
+    width: 95%;
+    max-width: 900px;
+    border-radius: 16px;
+    max-height: 90vh;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: modalEntrada 0.3s ease forwards;
+    z-index: 1005; /* Adicionando z-index menor que o botão de fechar */
+}
+
+@keyframes modalEntrada {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fechar-modal:hover {
+    transform: rotate(90deg);
+    background: var(--cor-primaria);
+    color: white;
 }
 
 .modal-personagem-info {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 2rem;
+    gap: 2.5rem;
+    align-items: start;
 }
 
 .modal-personagem-imagem {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.modal-personagem-imagem:hover {
+    transform: scale(1.02);
+}
+
+.modal-personagem-texto {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .modal-personagem-texto h2 {
     color: var(--cor-primaria);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    border-bottom: 2px solid var(--cor-dourada);
+    padding-bottom: 0.5rem;
 }
 
 .modal-personagem-texto p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: justify;
 }
 
-/* Responsividade */
+/* Responsividade do Modal */
 @media (max-width: 768px) {
-    .modal-personagem-info {
-        grid-template-columns: 1fr;
+    .modal-conteudo {
+        margin: 5% auto;
+        padding: 1.5rem;
+        width: 95%;
     }
 
-    .modal-conteudo {
-        margin: 10% auto;
-        width: 95%;
-        padding: 1rem;
+    .modal-personagem-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .modal-personagem-texto h2 {
+        font-size: 1.8rem;
+    }
+
+    .modal-personagem-texto p {
+        font-size: 1rem;
+    }
+
+    .fechar-modal {
+        right: 1rem;
+        top: 1rem;
+        width: 35px;
+        height: 35px;
     }
 }
 
