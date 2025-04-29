@@ -5,6 +5,10 @@
     --cor-preta: #1A1A1A;
     --cor-texto: #333;
     --cor-fundo: #FFF8F8;
+    --transicao-padrao: all 0.3s ease;
+    --sombra-padrao: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --gradiente-primario: linear-gradient(135deg, var(--cor-primaria), #660000);
+    --gradiente-dourado: linear-gradient(135deg, var(--cor-dourada), #B8860B);
 }
 
 /* Reset e estilos base */
@@ -19,6 +23,7 @@ body {
     line-height: 1.6;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
+    scroll-behavior: smooth;
 }
 
 /* Cabeçalho */
@@ -171,8 +176,20 @@ main {
 }
 
 .nav-btn.ativo {
-    background: var(--cor-primaria);
+    background: var(--gradiente-primario);
     color: var(--cor-fundo);
+    opacity: 0.8;
+    transition: var(--transicao-padrao);
+}
+
+.nav-btn:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.nav-btn.ativo {
+    opacity: 1;
+    background: var(--gradiente-dourado);
 }
 
 /* Seções de conteúdo */
@@ -301,6 +318,9 @@ main {
     border-radius: 8px;
     max-height: 90vh;
     overflow-y: auto;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .fechar-modal {
@@ -368,5 +388,205 @@ footer {
 
     .galeria {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navegacao {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .nav-btn {
+        flex: 1 1 auto;
+        margin: 0.5rem;
+        min-width: 120px;
+    }
+}
+
+/* Estilos do Carrossel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background 0.3s ease;
+    z-index: 2;
+}
+
+/* Adicionando responsividade ao carrossel */
+@media (max-width: 768px) {
+    .carousel {
+        height: 250px;
+    }
+
+    .carousel-control {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        height: 200px;
+    }
+
+    .carousel-control {
+        padding: 0.3rem;
+        font-size: 0.8rem;
+    }
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control.prev {
+    left: 1rem;
+}
+
+.carousel-control.next {
+    right: 1rem;
+}
+
+/* Resto dos estilos */
+.modal-conteudo {
+    position: relative;
+    background: white;
+    margin: 5% auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    max-height: 90vh;
+    overflow-y: auto;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fechar-modal {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    cursor: pointer;
+}
+
+.modal-personagem-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.modal-personagem-imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.modal-personagem-texto h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.modal-personagem-texto p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .modal-personagem-info {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-conteudo {
+        margin: 10% auto;
+        width: 95%;
+        padding: 1rem;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-preta);
+    color: var(--cor-dourada);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .episodio {
+        padding: 1.5rem;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navegacao {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .nav-btn {
+        flex: 1 1 auto;
+        margin: 0.5rem;
+        min-width: 120px;
     }
 }

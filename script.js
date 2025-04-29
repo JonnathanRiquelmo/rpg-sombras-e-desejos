@@ -274,3 +274,56 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo(0, posicaoInicial);
     }, 10);
 });
+
+// Adicione no início do arquivo
+document.addEventListener('DOMContentLoaded', function() {
+    inicializarCarrossel();
+});
+
+function inicializarCarrossel() {
+    const carouselInner = document.querySelector('.carousel-inner');
+    const prevButton = document.querySelector('.carousel-control.prev');
+    const nextButton = document.querySelector('.carousel-control.next');
+    let currentIndex = 0;
+    
+    // Array com os caminhos das imagens
+    const imagens = [
+        'assets/banner.svg',
+        'assets/banner01.jpeg',
+        'assets/banner02.jpeg'
+        // Adicione mais imagens conforme necessário
+    ];
+    
+    // Criar elementos de imagem
+    imagens.forEach(src => {
+        const div = document.createElement('div');
+        div.className = 'carousel-item';
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = 'Imagem do carrossel';
+        div.appendChild(img);
+        carouselInner.appendChild(div);
+    });
+    
+    // Configurar controles
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + imagens.length) % imagens.length;
+        atualizarCarrossel();
+    });
+    
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % imagens.length;
+        atualizarCarrossel();
+    });
+    
+    // Função para atualizar a posição do carrossel
+    function atualizarCarrossel() {
+        carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+    
+    // Rotação automática
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % imagens.length;
+        atualizarCarrossel();
+    }, 5000); // Troca a cada 5 segundos
+}
