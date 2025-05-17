@@ -47,12 +47,35 @@ function exibirEpisodios(episodios) {
                 </div>`
             : '<p class="text-muted mt-2"><em>Nenhuma imagem para este episÃ³dio.</em></p>'; // Mensagem se nÃ£o houver imagens
 
+        // Adiciona o vídeo se existir
+        let videoHTML = '';
+        if (episodio.video) {
+            if (episodio.video.includes('youtube') || episodio.video.includes('vimeo')) {
+                videoHTML = `
+                    <div class="episodio-video mt-3">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="${episodio.video}" title="Vídeo do episódio" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                `;
+            } else {
+                videoHTML = `
+                    <div class="episodio-video mt-3">
+                        <video controls class="w-100" style="max-height:400px;">
+                            <source src="${episodio.video}">
+                            Seu navegador não suporta vídeo.
+                        </video>
+                    </div>
+                `;
+            }
+        }
         return `
             <div class="card mb-4 episodio-card">
                 <div class="card-body">
                     <h2 class="card-title h4 episodio-titulo">${episodio.titulo}</h2>
                     <div class="card-subtitle mb-2 text-muted episodio-data">${dataFormatada}</div>
                     <p class="card-text">${episodio.resumo}</p>
+                    ${videoHTML}
                     ${galeriaHTML}
                 </div>
             </div>

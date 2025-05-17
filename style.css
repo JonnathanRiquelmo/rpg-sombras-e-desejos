@@ -91,7 +91,15 @@ main {
 .episodio .resumo {
     margin-bottom: 1.5rem;
 }
-
+.episodio-video {
+    margin-bottom: 1.5rem;
+}
+.episodio-video iframe,
+.episodio-video video {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    background: #000;
+}
 /* Galeria de imagens */
 .galeria-container {
     margin-top: 1rem;
@@ -156,7 +164,7 @@ main {
     object-fit: contain;
 }
 
-/* Navegação entre seções */
+/* Navegação entre seçães */
 .navegacao {
     display: flex;
     justify-content: center;
@@ -192,7 +200,7 @@ main {
     background: var(--gradiente-dourado);
 }
 
-/* Seções de conteúdo */
+/* Seçães de conteúdo */
 .secao-conteudo {
     display: none;
 }
