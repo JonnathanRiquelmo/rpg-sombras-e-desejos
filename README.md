@@ -16,9 +16,9 @@ Este é um site estático que documenta nossa campanha de RPG Pasión de las Pas
 
 Para adicionar ou atualizar o conteúdo do site, edite os arquivos JSON correspondentes:
 
-### Episódios (<mcfile name="episodios.json" path="c:\Users\jonna\Documents\sombras-e-desejos\episodios.json"></mcfile>)
+### Episódios (`episodios.json`)
 
-Edite o arquivo <mcfile name="episodios.json" path="c:\Users\jonna\Documents\sombras-e-desejos\episodios.json"></mcfile> seguindo a estrutura para cada episódio:
+Edite o arquivo `episodios.json` seguindo a estrutura para cada episódio:
 
 ```json
 {
