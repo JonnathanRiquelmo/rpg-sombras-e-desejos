@@ -1,16 +1,16 @@
 # Sombras e Desejos - Pasión de las Pasiones RPG
 
-Este é um site estático que documenta nossa campanha de RPG Pasión de las Pasiones, um jogo de drama e novela. O site exibe os episódios, o contexto da novela e os personagens de nossa campanha em um formato elegante e responsivo.
+Este é um site estático que documenta nossa campanha de RPG Pasión de las Pasiones, um jogo de drama e novela. O site exibe os episódios, o contexto da novela e os personagens de nossa campanha em um formato responsivo.
 
 ## Estrutura do Projeto
 
-- <mcfile name="index.html" path="c:\Users\jonna\Documents\sombras-e-desejos\index.html"></mcfile> - Página principal do site
-- <mcfile name="style.css" path="c:\Users\jonna\Documents\sombras-e-desejos\style.css"></mcfile> - Estilos e layout da página
-- <mcfile name="script.js" path="c:\Users\jonna\Documents\sombras-e-desejos\script.js"></mcfile> - Lógica para carregar e exibir o conteúdo
-- <mcfile name="episodios.json" path="c:\Users\jonna\Documents\sombras-e-desejos\episodios.json"></mcfile> - Dados dos episódios da campanha
-- <mcfile name="novela.json" path="c:\Users\jonna\Documents\sombras-e-desejos\novela.json"></mcfile> - Contexto e história da novela
-- <mcfile name="personagens.json" path="c:\Users\jonna\Documents\sombras-e-desejos\personagens.json"></mcfile> - Dados dos personagens
-- <mcfolder name="assets" path="c:\Users\jonna\Documents\sombras-e-desejos\assets"></mcfolder>/ - Pasta para armazenar imagens e vídeos
+- `index.html` - Página principal do site
+- `style.css` - Estilos e layout da página
+- `script.js` - Lógica para carregar e exibir o conteúdo
+- `episodios.json` - Dados dos episódios da campanha
+- `novela.json` - Contexto e história da novela
+- `personagens.json` - Dados dos personagens
+- `assets/` - Pasta para armazenar imagens e vídeos
 
 ## Como Adicionar Conteúdo
 
